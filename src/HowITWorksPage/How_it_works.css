@@ -1,0 +1,93 @@
+.how_main_container {
+  /* background-color: red; */
+  width: 100%;
+  /* max-width: 1400px; */
+  /* height: 100vh; */
+}
+
+.HowITWorksBanner_main_conatiner {
+  background: linear-gradient(135deg, #1a177a, #524fd5);
+  padding: 30px 60px;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+
+.DetailSteps_main_container {
+  width: 100%;
+  padding: 20px 20px 0px 20px;
+}
+
+.big-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.big-step {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 32px;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.big-step:last-child {
+  border-bottom: none;
+}
+.big-step-num {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  background: var(--primary);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(82, 79, 213, 0.3);
+  flex-shrink: 0;
+}
+.big-step-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.big-step-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+.detail-chip {
+  background: var(--secondary);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.padding_wrapper3 {
+  padding: 0px 80px;
+}
+
+@media (min-width: 0px) and (max-width: 568px) {
+  .padding_wrapper3 {
+    padding: 10px;
+  }
+
+  .big-step {
+    display: flex;
+    flex-direction: column;
+  }
+  .HowITWorksBanner_main_conatiner {
+    padding: 30px;
+  }
+
+  .UseCaseBanner_main_conatiner {
+    padding: 30px !important;
+  }
+}

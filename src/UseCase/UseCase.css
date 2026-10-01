@@ -1,0 +1,139 @@
+.UseCaseBanner_main_conatiner {
+  background: linear-gradient(135deg, #1a177a, #524fd5);
+  padding: 30px 60px;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+
+.use_case_main_container {
+  width: 100%;
+  /* max-width: 1400px; */
+}
+
+.usecases-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.usecase-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.usecase-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+.usecase-icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+.usecase-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.usecase-desc {
+  font-size: 13px;
+  color: var(--text-sec);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up {
+  animation: fadeUp 0.6s ease forwards;
+}
+.usecaseconatinerdiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.usecaseconatinerdiv_card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.usecaseconatinerdiv_card_p {
+  font-size: 14px;
+  color: var(--text-sec);
+  line-height: 1.7;
+}
+
+.usecaseconatinerdiv_card__div {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+.usecaseconatinerdiv_card_seperate {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.usecaseconatinerdiv_card_h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.UseCaseContent_conatiner {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+}
+
+.section-alt {
+  background: #f5f3ff;
+}
+
+.cta-banner {
+  background: linear-gradient(135deg, var(--primary) 0%, #7b55e0 100%);
+  padding: 64px 60px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 0px) and (max-width: 568px) {
+  .usecases-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .usecaseconatinerdiv {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}

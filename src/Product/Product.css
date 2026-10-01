@@ -1,0 +1,135 @@
+.Product_main_container {
+  width: 100%;
+}
+
+.Product_poster_container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white; */
+
+  background: linear-gradient(135deg, #1a177a, #524fd5);
+  padding: 80px 0 60px;
+  color: white;
+  text-align: center;
+}
+
+.tag_bg {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.posterheader {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.Product_poster_h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin: 14px 0 16px;
+  font-family: "Sora", sans-serif;
+}
+
+.product_poster_p {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  /* max-width: 540px; */
+  margin-bottom: 32px;
+}
+
+.tags-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  padding: 50px;
+}
+
+.tag-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: white;
+  transition: all 0.3s;
+  text-align: left;
+}
+
+.tag-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.tag-visual {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  position: relative;
+}
+
+.tag-visual-car {
+  background: linear-gradient(135deg, #e9e2ff 0%, #d0c8ff 100%);
+}
+.tag-visual-bike {
+  background: linear-gradient(135deg, #fce7f3 0%, #f9a8d4 100%);
+}
+
+.tag-info {
+  padding: 22px 24px;
+}
+.tag-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.tag-desc {
+  font-size: 14px;
+  color: var(--text-sec);
+  margin-bottom: 16px;
+}
+
+.tag-specs {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+}
+.spec-pill {
+  background: var(--secondary);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.product_section_container {
+  padding: 40px;
+}
+
+.product_banner_button {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.cta-btns {
+  margin: 20px;
+}
+
+.ProductBanner_h2 {
+  margin: 10px 0px;
+}
+
+@media (min-width: 0px) and (max-width: 568px) {
+  .tags-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+}
